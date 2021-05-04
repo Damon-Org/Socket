@@ -1,0 +1,8 @@
+{
+    "redis": {
+        "host": "redis",
+        "port": 6379,
+        "password": "C0KHfa7sa9AmzNpWzcAu9eC67Reip7R5M"
+    },
+    "token": ""
+}

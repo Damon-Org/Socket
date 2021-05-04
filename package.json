@@ -1,0 +1,17 @@
+{
+  "name": "tcp_socket",
+  "version": "0.1.0",
+  "description": "TCP Socket server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-loader=./util/loader.js .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yimura",
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^4.27.1",
+    "uuid": "^8.3.2"
+  }
+}
