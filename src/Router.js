@@ -43,6 +43,7 @@ export default class Router {
     onMessage(client, message) {
         switch (message.op) {
             case OPCode.EVENT:
+            case OPCode.REPLY:
                 this.forward(message);
 
                 break;
