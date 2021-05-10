@@ -67,7 +67,7 @@ export default class Client {
      * @param {Buffer} data
      */
     onData(data) {
-        if (data.length > (1024 * 32)) return this.disconnect('MESSAGE_TOO_BIG');
+        if (data.length > this._m.config.max_bytes_message) return this.disconnect('MESSAGE_TOO_BIG');
         const str = data.toString();
 
         try {
